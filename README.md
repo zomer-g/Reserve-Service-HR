@@ -85,4 +85,22 @@ This script is designed to allow control of manpower data based on a central Gan
 4. **Save the script**.
 5. **Run the function `extractAndLogUniqueNamesAndDetails`**.
 
-This script is designed to be run as a Google Apps Script. It processes data from the specified sheets and generates comprehensive reports to facilitate manpower control and management. Make sure to structure your sheets as described for the script to work correctly.
+### Adding Triggers
+
+Google Apps Script allows you to add triggers that can run your script automatically when specific events occur, such as when the file is edited or at a scheduled time (e.g., every night).
+
+To add a trigger:
+
+1. **Open the Google Apps Script Editor**.
+2. **Click on the clock icon** in the toolbar to open the triggers page.
+3. **Click on the "+ Add Trigger" button** in the bottom-right corner.
+4. **Configure the trigger**:
+   - Choose the function to run: `extractAndLogUniqueNamesAndDetails`.
+   - Choose which deployment should run: Head.
+   - Select the event source:
+     - To run the script when the file is edited, select "From spreadsheet" and then "On edit".
+     - To run the script at a scheduled time, select "Time-driven" and configure the desired schedule (e.g., daily at a specific time).
+5. **Click "Save"**.
+
+## Code Creation
+The code for this script was created using ChatGPT-4 by OpenAI. It has been designed to be run as a Google Apps Script, processing data from specified sheets and generating comprehensive reports to facilitate manpower control and management. Make sure to structure your sheets as described for the script to work correctly.

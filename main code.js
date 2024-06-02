@@ -24,7 +24,7 @@ function extractAndLogUniqueNamesAndDetails() {
     console.log('Script started');
 
     // Define the spreadsheet and sheets
-    var spreadsheetId = '1kvCgLfO5rl2reajs1WgbI-riW0bjAuyU9hVWk6NhVis';
+    var spreadsheetId = '[SPREADSHEET_ID]';
     var spreadsheet = SpreadsheetApp.openById(spreadsheetId);
     var ganttSheet = spreadsheet.getSheetByName('Gantt chart');
     var idSheet = spreadsheet.getSheetByName('ID');
